@@ -36,3 +36,15 @@ a { color:blue; text-decoration: none;}
 figure {
     text-align: center;
 }
+p 
+{
+    text-align: justify;
+    font-size: .4rem;
+}
+h2 {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
