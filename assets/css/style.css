@@ -3,8 +3,14 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+ul { 
+    list-style-type: disc; 
+    padding-left: 5px; 
+}
+a { 
+    color:blue; 
+    text-decoration: none;
+}
 .bar {
     background-color: #f9f9fb;
     padding:15px;
@@ -25,6 +31,7 @@ a { color:blue; text-decoration: none;}
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    text-align: center;
 }
 .anchors {
     border-left: solid 1px #cdcdcd;
@@ -47,4 +54,42 @@ h2 {
 h1 {
     font-size: 2rem;
     text-align: center;
+    text-justify: inter-word;   
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.alternada {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-inline-start: -25px;
+}
+#diagrama {
+    font-size: 0.325rem;
+    text-align: center;
+    margin-top: -10px;
+}
+.dc {
+   border-top: solid 1px #cdcdcd;
+}
+address {
+    margin-left: 200px;
+    font-style: normal;
+    font-size: 0.5rem;
+    margin-top: -19px; 
+}
+footer p {
+    color: black;
+    font-size: 0.5rem;
+    margin-top: 10px; 
+}                               
+footer p a {
+    color: black;
+    margin-left: 0px;
+    text-align: center; 
+    font-size: 8px; 
+    padding: 1px; 
 }

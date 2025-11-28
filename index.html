@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Wikipedia do Mundo da Elétrica</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <div>   
         <div class="logo">
-            <img src="assets/imagens/Wikipedia-logo_(inverse).png" width="50"/>
+            <figure>
+                <img src="assets/imagens/Wikipedia-logo_(inverse).png" width="50" alt="Logo-tipo Wikipedia"/>
+            </figure>
             <h1>Wikipedia do Mundo da Elétrica</h1>
         </div>
     </div>
@@ -21,35 +23,67 @@
     <div class="content">
         <div class="sidebar">
             <h2>Mundo da Elétrica</h2>
+            <h5>Neste Artigo</h5>
             <ul>
-                <li><a href="#">Corrente Alternada</a></li>
-            </ul>
+                <li><a href="#AC">Corrente Alternada</a></li>
+                <li><a href="#V-ac">Tensão Alternada</a></li>
+                <li><a href="#DC">Corrente Contínua</a></li>
+                <li><a href="#V-dc">Tensão Contínua</a></li>
+            </ul> 
         </div>
 
         <div class="main">
-            <h2> Corrente Alternada AC ou CA </h2>
+            <h2 id="AC"> Corrente Alternada AC ou CA </h2>
             <p>A corrente alternada (CA ou AC - do inglês alternating current) é uma corrente elétrica cujo sentido varia no tempo,
                  ao contrário da corrente contínua, cujo sentido permanece constante ao longo do tempo. A forma de onda usual em um circuito de potência CA é senoidal. Por ser uma forma de transmissão de energia mais eficiente, normalmente a CA é o tipo de corrente que chega às residências. Entretanto, em certas aplicações, diferentes formas de ondas são utilizadas, tais como triangular ou ondas quadradas. Enquanto a fonte de corrente contínua é constituída pelos polos positivo e negativo, 
                 a de corrente alternada é composta por fases (e, muitas vezes, pelo fio neutro).</p>
         
-                <h2>Tensão alternada</h2>
+                <h2 id="V-ac">Tensão alternada</h2>
                 <p>Uma tensão alternada é um sinal senoidal, os diagramas de circuito, uma fonte ideal de tensão alternada representa-se pelo símbolo na figura abaixo. Junto do diagrama indica-se a tensão máxima e a frequência. 
                     Os valores apresentados na figura são os que estão em uso na rede elétrica pública da União Europeia: frequência 
                     f de 50 Hz e tensão máxima de 325 V.</p>
-                    <br>
-                <img src="assets/imagens/tensao-alternada.png" width="100"/>
+                <figure class="alternada">
+                    <img src="assets/imagens/tensao_alternada.png" width="200" alt="Diagrama de circuito para uma fonte ideal de tensão alternada "/>
+                </figure>
+                <figcaption id="diagrama">Diagrama de circuito para uma fonte ideal de tensão alternada </figcaption>
+                <h2>Gerador de tensão alternada</h2>
+                <p>Um gerador de tensão alternada, consiste numa bobina que se faz rodar dentro de um campo magnético; o fio onde começa a bobina está soldado a um anel condutor e o fim do fio, depois de ser enrolado na bobina, solda-se a outro anel condutor; esses dois anéis mantêm o contato com duas escovas, enquanto a bobina roda, 
+                    de forma que a diferença de potencial entre as escovas é igual à diferença de potencial na bobina toda.</p>
+            <div class="dc">
+                <h2 id="DC"> Corrente Contínua DC ou CC </h2>
+                <p>Corrente contínua (CC ou DC do inglês direct current) é o fluxo ordenado de elétrons num único sentido mediante a presença de uma diferença de potencial, diferentemente da corrente alternada, na qual o sentido do movimento dos elétrons varia no tempo.
+                    Os elétrons fluem do pólo negativo para positivo, o que é chamado de sentido real da corrente elétrica.
+                    Na análise de circuitos elétricos, por convenção, os elétrons fluem do pólo positivo para o polo negativo, que recebe a denominação de sentido convencional da corrente elétrica, que acompanha o sentido do campo elétrico.</p>
+                <h2 id="V-dc">Tipos de correntes contínuas</h2>
+                <p>As correntes contínuas podem ser constantes ou pulsantes.
+                Correntes contínuas constantes: A CC é considerada constante quando sua intensidade e sentido não se altera com o passar do tempo. É comumente encontrada em pilhas e baterias.
+                O gráfico, assim como a forma de onda dessa corrente é um segmento de reta constante.
+                Correntes contínuas pulsantes: Nesse modelo, a corrente tem seu sentido constante, porém o fluxo de elétrons no interior do fio se comporta como pulsos, fazendo com que a intensidade passe por variações no decorrer do tempo. Geralmente é encontrada em circuitos retificadores de corrente alternada.
+                Como a corrente não muda de sentido, sua forma de onda nunca troca de sinal.</p>  
+                <p><a href="#AC">Voltar ao topo</a></p>   
+                              
+            </div>
         </div>
-
         <div class="anchors">
-            <h2>Neste Artigo</h2>
+            <h2>Links para explorar mais conteúdos</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Corrente_alternada" alt="Link para artigo sobre Corrente Alternada na Wikipédia">Corrente Alternada</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Corrente_cont%C3%ADnua" alt="Link para artigo sobre Corrente Contínua na Wikipédia">Corrente Contínua</a></li>
+            </ul>  
         </div>
     </div>
 
     <div class="footer">
-
+        <footer>
+        <p>&copy; Desenvolvido para fins educacionais. Todos os direitos reservados. 2025
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                      </p>
+                      <address>
+                        Endereço da empresa, 123 - Cidade
+                      </address>
+                      
+        </footer>
     </div>
 </body>
 </html>
